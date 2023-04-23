@@ -117,14 +117,14 @@ class ChatGPT:
 
         # add chat context
         if len(dialog_messages) > 0:
-            prompt += "Chat:\n"
+            prompt += "Чат:\n"
             for dialog_message in dialog_messages:
-                prompt += f"User: {dialog_message['user']}\n"
-                prompt += f"Assistant: {dialog_message['bot']}\n"
+                prompt += f"Пользователь: {dialog_message['user']}\n"
+                prompt += f"Помощник: {dialog_message['bot']}\n"
 
         # current message
-        prompt += f"User: {message}\n"
-        prompt += "Assistant: "
+        prompt += f"Пользователь: {message}\n"
+        prompt += "Помощник: "
 
         return prompt
 
